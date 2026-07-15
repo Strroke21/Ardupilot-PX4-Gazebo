@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version="1.9">
-  <world name="obs_drone">
+  <world name="obs">
     <physics name="1ms" type="ignore">
       <max_step_size>0.001</max_step_size>
       <real_time_factor>1.0</real_time_factor>
@@ -71,7 +71,7 @@
     </include>
     
     <include>
-      <uri>model://obs_drone</uri>
+      <uri>model://iris_with_zed2i</uri>
       <pose degrees="true">0 0 0.195 0 0 90</pose>
     </include>
     
@@ -92,7 +92,7 @@
     
     <include>
       <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/House 2</uri>
-      <pose degrees="true">140 0 0.195 0 0 0</pose>
+      <pose degrees="true">0 40 0.195 0 0 0</pose>
     </include>
     
   </world>
