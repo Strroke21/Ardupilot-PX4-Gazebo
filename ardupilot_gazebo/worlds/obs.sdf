@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version="1.9">
-  <world name="anti_drone">
+  <world name="obs_drone">
     <physics name="1ms" type="ignore">
       <max_step_size>0.001</max_step_size>
       <real_time_factor>1.0</real_time_factor>
@@ -69,19 +69,11 @@
       <uri>model://runway</uri>
       <pose degrees="true">-40 545 0 0 0 363</pose>
     </include>
-
-    <!-- drone shield -->
     
     <include>
-      <uri>model://ad_drone1</uri>
+      <uri>model://obs_drone</uri>
       <pose degrees="true">0 0 0.195 0 0 90</pose>
     </include>
-    
-    <!-- rogue drone -->
-    <include>
-      <uri>model://ad_drone2</uri>
-      <pose degrees="true">2 -3 0.195 0 0 90</pose>
-    </include> 
     
     <include>
       <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Collapsed House</uri>
@@ -100,7 +92,7 @@
     
     <include>
       <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/House 2</uri>
-      <pose degrees="true">140 400 0.195 0 0 0</pose>
+      <pose degrees="true">140 0 0.195 0 0 0</pose>
     </include>
     
   </world>
