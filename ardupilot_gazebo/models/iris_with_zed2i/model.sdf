@@ -10,6 +10,17 @@
       <name>zed2i</name>
       <pose degrees="true">0.05 0 -0.05 0 0 90</pose>    
     </include>
+    
+    <include>
+      <uri>model://livox-mid360</uri>
+      <pose degrees="true">0.0 0 0.06 90 0 -90</pose> 
+    </include>
+    
+    <joint name="livox_mount" type="fixed">
+      <parent>iris_with_standoffs::base_link</parent>
+      <child>livox-mid360::mid360_link</child>
+    </joint>
+      
 
     <joint name="zed_mount" type="fixed">
       <parent>iris_with_standoffs::base_link</parent>
