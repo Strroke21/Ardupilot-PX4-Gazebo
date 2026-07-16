@@ -13,7 +13,7 @@
     
     <include>
       <uri>model://livox-mid360</uri>
-      <pose degrees="true">0.0 0 0.06 90 0 -90</pose> 
+      <pose degrees="true">0.0 0 0.25 0 0 0</pose> 
     </include>
     
     <joint name="livox_mount" type="fixed">

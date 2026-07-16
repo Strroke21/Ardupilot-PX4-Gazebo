@@ -77,17 +77,17 @@
     
     <include>
       <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Collapsed House</uri>
-      <pose degrees="true">105 0 0.195 0 0 0</pose>
+      <pose degrees="true">15 20 0.195 0 0 0</pose>
     </include>
     
     <include>
       <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Fire truck</uri>
-      <pose degrees="true">70 0 0.195 0 0 0</pose>
+      <pose degrees="true">0 -10 0.195 0 0 90</pose>
     </include>
     
     <include>
       <uri>https://fuel.gazebosim.org/1.0/hisuki/models/Indian House</uri>
-      <pose degrees="true">60 0 0.195 0 0 0</pose>
+      <pose degrees="true">20 0 0.195 0 0 0</pose>
     </include>
     
     <include>
