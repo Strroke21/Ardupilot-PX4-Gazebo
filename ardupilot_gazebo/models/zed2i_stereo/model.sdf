@@ -24,7 +24,7 @@
 
       <visual name="visual">
 
-        <pose>0.00897 0.03020 0.00262 0 0 0</pose>
+        <pose>0 0.03020 0.00262 0 0 0</pose>
 
         <geometry>
           <mesh>
@@ -48,6 +48,7 @@
       <sensor name="imu" type="imu">
 
         <always_on>true</always_on>
+        <pose>0 0 0 0 0 -1.57</pose>
 
         <update_rate>200</update_rate>
 
@@ -100,7 +101,8 @@
         <camera>
 
           <!-- 110 degrees -->
-          <horizontal_fov>1.91986</horizontal_fov>
+          <horizontal_fov>1.25664</horizontal_fov>
+          <vertical_fov>0.767945</vertical_fov>
 
           <image>
             <width>1280</width>
@@ -122,7 +124,7 @@
     <link name="zed2i_right_camera_link">
 
       <!-- 120 mm stereo baseline -->
-      <pose>-0.12 0 0 0 0 0</pose>
+      <pose>-0.12 0.12 0 0 0 0</pose>
 
       <inertial>
         <mass>0.001</mass>
@@ -157,7 +159,8 @@
 
         <camera>
 
-          <horizontal_fov>1.91986</horizontal_fov>
+          <horizontal_fov>1.25664</horizontal_fov>
+          <vertical_fov>0.767945</vertical_fov>
 
           <image>
             <width>1280</width>

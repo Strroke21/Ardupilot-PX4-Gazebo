@@ -8,7 +8,7 @@
     <include>
       <uri>model://zed2i_stereo</uri>
       <name>zed2i</name>
-      <pose degrees="true">-0.25 0 -0.12 90 0 -90</pose>    
+      <pose degrees="true"> 0 -0.1 -0.1 90 0 -90</pose>    
     </include>
 
     <joint name="zed_mount" type="fixed">
