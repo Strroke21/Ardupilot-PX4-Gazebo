@@ -12,8 +12,8 @@ This repository provides simulation resources for **ArduPilot** and **PX4** usin
 
 ## Requirements
 
-- Ubuntu 22.04
-- ROS 2 Humble
+- Ubuntu 22.04/24.04
+- ROS 2 Humble/Jazzy
 - Gazebo Garden
 - ArduPilot and/or PX4
 
@@ -21,6 +21,24 @@ This repository provides simulation resources for **ArduPilot** and **PX4** usin
 
 ```bash
 git clone https://github.com/Strroke21/Ardupilot-PX4-Gazebo.git
+```
+
+## Build ardupilot plugin
+
+```
+sudo apt update
+sudo apt install -y \
+    libgstreamer1.0-dev \
+    libgstreamer-plugins-base1.0-dev
+
+cd ~/Ardupilot-PX4-Gazebo.git/ardupilot_gazebo
+
+mkdir build && cd build
+
+cmake ..
+make -j$(nproc)
+sudo make install
+
 ```
 
 ## License
