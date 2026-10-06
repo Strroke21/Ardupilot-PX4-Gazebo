@@ -41,6 +41,15 @@ sudo make install
 
 ```
 
+## Add to the Path
+
+```
+
+echo 'export GZ_SIM_SYSTEM_PLUGIN_PATH=$HOME/Ardupilot-PX4-Gazebo/ardupilot_gazebo/build:$GZ_SIM_SYSTEM_PLUGIN_PATH' >> ~/.bashrc
+echo 'export GZ_SIM_RESOURCE_PATH=$GZ_SIM_RESOURCE_PATH:$HOME/Ardupilot-PX4-Gazebo/ardupilot_gazebo/worlds:$HOME/Ardupilot-PX4-Gazebo/ardupilot_gazebo/models:$HOME/Ardupilot-PX4-Gazebo/PX4-gazebo-models/worlds:$HOME/Ardupilot-PX4-Gazebo/PX4-gazebo-models/models' >> ~/.bashrc
+
+```
+
 ## License
 
 This project is intended for research and development. Third-party components retain their respective licenses.
